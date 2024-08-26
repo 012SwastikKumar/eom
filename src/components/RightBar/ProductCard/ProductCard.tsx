@@ -1,4 +1,5 @@
 import { FaStar, FaPlusCircle } from "react-icons/fa";
+import { FiPlus } from "react-icons/fi";
 import "./ProductCard.css";
 
 type ProductCardProps = {
@@ -25,12 +26,15 @@ const ProductCard = ({
         <h3 className="text-lg font-semibold text-gray-800">{itemName}</h3>
         <p className="text-gray-600">Price ${itemPrice}</p>
       </div>
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-between items-center mt-4 ">
         <div className="flex items-center space-x-2 text-teal-500">
           <FaStar />
           <span>{itemRating}</span>
         </div>
-        <FaPlusCircle className="text-teal-500 cursor-pointer" />
+        <div className="AddToCartIcon-Container">
+          
+        <FiPlus />
+        </div>
       </div>
     </div>
   );

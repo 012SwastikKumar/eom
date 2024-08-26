@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0rem 2rem;
-    background-color: rgb(255, 255, 255); 
+    /* background-color: rgb(255, 255, 255);  */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -13,24 +13,35 @@
 }
 
 .Header_BrandTag_Regular{
-    font-size: 1rem;
-    font-weight: 400; 
-    margin-top: 130px;  
+    font-size: 1.2rem;
+    font-weight: 600; 
 }
 
 .SearchBox{
     display: flex;
     align-items: center;
+    gap: 1rem;
     background-color: white;
     border-radius: 50px;
-    padding: 0 1rem 0 0;
+    padding: 0 1rem 0 0.4rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.InputBox, .InputBox:active, .InputBox:focus{
+.InputBox{
+    border: none ;
+    box-shadow: none !important;
+    /* outline: none !important; */
+    border-radius: 50px;
+    width: 20rem;
+    transition: all 0.3s;
+}
+
+.InputBox:active, .InputBox:focus{
     border: none ;
     box-shadow: none !important;
     outline: none ;
     border-radius: 50px;
+    width: 30rem;
+    transition: all 0.3s;
 }
 
 .SearchIconContainer{
@@ -39,19 +50,18 @@
     border-radius: 500px;
 }
 
-.SearchIconContainer:hover{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 500px;
-}
-
 .Profile{
     display: flex;
     align-items: center;
     border-radius: 50px;
     gap: 0.5rem;
+    cursor: pointer;
+    /* padding: 0.2rem 1rem 0.2rem 0.4rem;  */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
+/* .Profile:hover{
+    background: #e6e6e6;    
+} */
 
 .Profile_Image{
     width: 40px;

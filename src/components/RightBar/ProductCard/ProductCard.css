@@ -8,3 +8,12 @@
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.AddToCartIcon-Container{
+    background-color: #34938a;
+    padding: .4rem;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 100rem;
+    cursor: pointer;
+}
