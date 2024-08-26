@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../Header/Header";
 import ProductCard from "./ProductCard/ProductCard";
 import "./RightBar.css"; 
@@ -67,7 +67,7 @@ const RightBar = () => {
 
   return (
     <div className="RightBar-Container">
-      {console.log("RightBar Rendered")}
+      {/* {console.log("RightBar Rendered")} */}
       <Header textInput={textInput} setTextInput={setTextInput} onSearch={handleSearch}/>
       <div className="RightBar_Body">
         <p className="RightBar_Heading">Our Products</p>
