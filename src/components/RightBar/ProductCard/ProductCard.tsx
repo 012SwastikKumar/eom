@@ -1,4 +1,4 @@
-import { FaStar, FaPlusCircle } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import "./ProductCard.css";
 
