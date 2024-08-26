@@ -1,0 +1,30 @@
+.LeftBar-Container{
+    width: 16rem;
+    /* height: 100vh; */
+    /* background-color: rgb(255, 0, 0); */
+    padding: 1rem 0;
+}
+
+.LeftBar-Header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.4rem 1.2rem;
+    gap: 1rem;
+    /* background-color: rgb(0, 255, 0); */
+}
+
+.LeftBar__BrandName{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #016170;
+}
+
+.IconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 100rem;
+    background-color: #213344;
+}

@@ -1,0 +1,25 @@
+.RightBar-Container{
+    width: 68rem;
+    /* height: 100vh; */
+    /* background-color: rgb(0, 0, 255); */
+    background-color: #FAFAFA;
+    padding: 1rem 0;
+}
+
+.RightBar_Body{
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.RightBar_Heading
+{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #016170;
+    /* margin: 1rem; */
+}
+
+.Products-Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
