@@ -25,6 +25,8 @@
     border-radius: 50px;
     padding: 0 1rem 0 0.4rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+
 }
 .InputBox{
     border: none ;
@@ -36,19 +38,15 @@
 }
 
 .InputBox:active, .InputBox:focus{
-    border: none ;
-    box-shadow: none !important;
-    outline: none ;
-    border-radius: 50px;
     width: 30rem;
     transition: all 0.3s;
 }
 
-.SearchIconContainer{
-    height: inherit;
+.SearchIconContainer, .MicIconContainer {
     cursor: pointer;
-    border-radius: 500px;
-}
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
 
 .Profile{
     display: flex;

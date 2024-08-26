@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import ProductCard from "./ProductCard/ProductCard";
-import "./RightBar.css";
+import "./RightBar.css"; 
 
 const RightBar = () => {
+  const [textInput, setTextInput] = useState<string>("");
+  const handleSearch = (input:string) => {
+    console.log(`Received from Header: ${input}`);
+    // You can also update state or perform other actions here
+  };
+
+  // useEffect(() => {
+  //   console.log(`Current Text Input: ${textInput}`);
+  // },[textInput]);
+
   const products = [
     {
       itemImage: "https://example.com/images/mens-blue-shirt.jpg",
@@ -56,7 +67,8 @@ const RightBar = () => {
 
   return (
     <div className="RightBar-Container">
-      <Header />
+      {console.log("RightBar Rendered")}
+      <Header textInput={textInput} setTextInput={setTextInput} onSearch={handleSearch}/>
       <div className="RightBar_Body">
         <p className="RightBar_Heading">Our Products</p>
         <div className="Products-Container">

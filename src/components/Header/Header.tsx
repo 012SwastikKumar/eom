@@ -4,15 +4,21 @@ import { IoMdMicOff } from "react-icons/io";
 import SearchIcon from "@mui/icons-material/Search";
 import ProfileImage from "../../assets/profile_img.png";
 import "./Header.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useSpeechToText from "../../hooks/useSpeechToText/useSpeechToText";
 
-const Header = () => {
-  const [textInput, setTextInput] = useState("");
+interface HeaderProps {
+  textInput: string;
+  setTextInput: React.Dispatch<React.SetStateAction<string>>;
+  onSearch: (input: string) => void;
+}
+
+
+const Header : React.FC<HeaderProps>= ({ textInput, setTextInput, onSearch }) => {
+  // const [textInput, setTextInput] = useState("");
   const { isListening, transcript, startListening, stopListening } =
     useSpeechToText();
   useEffect(() => {
-    // Update textInput whenever transcript changes and listening stops
     if (!isListening && transcript) {
       setTextInput((prev) => prev + " " + transcript);
     }
@@ -26,6 +32,11 @@ const Header = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     isListening ? stopVoiceInput() : startListening();
   };
+
+  const SearchButtonClickHandler = () => {
+    console.log(`Sent From Header: ${textInput}`);
+    onSearch(textInput); // Call the onSearch prop with textInput
+  }
 
   return (
     <div className="Header">
@@ -44,9 +55,9 @@ const Header = () => {
           className="InputBox"
           placeholder="Search Your Products Here"
         />
-        <div className="SearchIconContainer">
+        <button onClick={SearchButtonClickHandler} className="SearchIconContainer">
           <SearchIcon />
-        </div>
+        </button>
         <button onClick={startStopListening} className="MicIconContainer">
           {isListening ? <IoMdMicOff /> : <IoMdMic />}
         </button>
