@@ -9,26 +9,26 @@ const RightBar = () => {
   // const [imgUrl, setImgUrl] = useState('../../../../../images/Screenshot 2024-08-25 235210.png')
   const prods = [
     {
-      itemImage: "https://example.com/images/mens-blue-shirt.jpg",
-      itemName: "Men’s Blue Shirt",
+      itemImage: "./images/img1.png",
+      itemName: "Product Name",
       itemPrice: 120.45,
       itemRating: 4.9,
     },
     {
-      itemImage: "https://example.com/images/womens-red-dress.jpg",
-      itemName: "Women’s Red Dress",
+      itemImage: "./images/img200.jpeg",
+      itemName: "Product Name",
       itemPrice: 89.99,
       itemRating: 4.7,
     },
     {
-      itemImage: "https://example.com/images/sneakers.jpg",
-      itemName: "Running Sneakers",
+      itemImage: "./images/img300.jpeg",
+      itemName: "Product Name",
       itemPrice: 150.0,
       itemRating: 4.8,
     },
     {
-      itemImage: "https://example.com/images/wrist-watch.jpg",
-      itemName: "Luxury Wrist Watch",
+      itemImage: "./images/img366.jpeg",
+      itemName: "Product Name",
       itemPrice: 299.99,
       itemRating: 4.6,
     },

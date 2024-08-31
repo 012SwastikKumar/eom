@@ -5,7 +5,7 @@ const Loader: React.FC = () => {
   return (
     <div className="loading-container">
       <div className="spinner"></div>
-      <p>This may take time depending upon your GPU</p>
+      <p>We are finding PERFECT match for you...</p>
     </div>
   );
 };
